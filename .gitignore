@@ -1,4 +1,6 @@
-# Ignore OS specific files #
+.gradle
+/local.properties
+/.idea/workspace.xml
 .DS_Store
 .directory
 .DS_Store?
