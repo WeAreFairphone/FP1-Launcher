@@ -15,14 +15,7 @@
  */
 package org.fairphone.launcher;
 
-import com.crashlytics.android.Crashlytics;
-
 public class FairphoneApplication extends LauncherApplication
 {
-    @Override
-    public void onCreate()
-    {
-        Crashlytics.start(this);
-        super.onCreate();
-    }
+
 }
