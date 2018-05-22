@@ -26,7 +26,7 @@
     <!-- AppSwitcher Widget  name -->
     <string name="app_switcher_name">Your apps</string>
     <!-- AppSwitcher Widget  name -->
-    <string name="app_switcher_dialog_name">YourAppsDialog</string>  
+    <string name="app_switcher_dialog_name">YourAppsDialog</string>
     <!-- Accessibility-facing application name -->
     <string name="home">Home</string>
     <!-- Name for all applications running as this uid. -->
@@ -48,7 +48,7 @@
     <!-- Message to tell the user to press and hold on a widget to add it [CHAR_LIMIT=50] -->
     <string name="long_press_widget_to_add">Touch &amp; hold to pick up a widget.</string>
     <!--
-         Market button text.  The market button text is removed in Launcher.java 
+         Market button text.  The market button text is removed in Launcher.java
          in the Phone UI. [CHAR LIMIT=32]
     -->
     <string name="market">Shop</string>
@@ -101,7 +101,7 @@ s
     <string name="menu_show_OOBE">Tutorial</string>
     <string name="menu_change_edge_swipe">Change menu</string>
     <string name="menu_home_settings">Home Settings</string>
-    
+
     <!-- Error message when user has filled all their home screens -->
     <string name="completely_out_of_space">No more room on your Home screens.</string>
     <!-- Error message when user has filled a home screen -->
@@ -311,10 +311,10 @@ s
     <string name="image_desc">Default image descrition</string>
 
     <!-- Fairphone -->
-    
+
     <!-- Your Apps -->
     <string name="your_apps">Your Apps</string>
-    
+
     <string name="last_used_apps">Last\nused\napps</string>
     <string name="last_used">Last used</string>
     <string name="most_used_apps">Most\nused\napps</string>
@@ -324,7 +324,7 @@ s
     <string name="most_used_oobe">And your phone learns from you, it will remember your most used apps</string>
     <string name="reset">Reset</string>
     <string name="app_switcher_reset_message">Are you sure?</string>
-    
+
     <!-- Quick Access -->
     <string name="quick_access">Quick Access</string>
     <string name="edit">Edit</string>
@@ -335,12 +335,12 @@ s
     <!-- Settings -->
     <string name="energy_mood">Energy Mood on lock screen</string>
     <string name="energy_mood_summary">Display battery level as background color on lock screen</string>
-    
+
     <string name="menu_change_edge_swipe_change_to">Changed to</string>
 	<string name="menu_change_edge_swipe_normal">normal menu</string>
 	<string name="menu_change_edge_swipe_alternative">alternative menu</string>
 	<string name="oobeVideoSkipButtonText">skip</string>
-	
+
 	<!-- Preferences -->
 	<string name="pref_mood_changer_title">Mood Changer</string>
 	<string name="pref_edge_swipe_title">Edge Swipe</string>
@@ -348,48 +348,48 @@ s
 	<string name="pref_edge_swipe_safe_zone_summ">Enabling makes Edge Swipe menu not go out of top or bottom</string>
 	<string name="pref_show_mood_changer_on_lockscreen_summary">Enable Mood Changer on lockscreen, this will display the battery level as a background colour on the lockscreen</string>
 	<string name="pref_show_mood_changer_on_lockscreen">Mood Changer on lockscreen</string>
-	
+
 	<string name="pref_show_mood_changer_on_homescreen_summary">Enable Mood Changer on homescreen, this will display the battery level as a background colour on the homescreen</string>
 	<string name="pref_show_mood_changer_on_homescreen">Mood Changer on homescreen</string>
-	
+
 	<string name="pref_is_mood_changer_solid_summary">Is Mood changer solid</string>
 	<string name="pref_is_mood_changer_solid">Solid Mood</string>
-	
+
 	<!-- OOBE Texts -->
 	<string name="oobe_quick_access">Quick Access</string>
-	
+
 	<string name="oobe_select_language">Select\nLanguage</string>
 	<string name="oobe_setup_wifi">Setup\nWi-Fi</string>
 	<string name="oobe_intro_top">Welcome!\nYou hold in your hands a phone built in a way that puts social values first. But yes, it makes phone calls, too.</string>
 	<string name="oobe_intro_bottom">Let\'s show you how to use it</string>
-	
+
 	<string name="oobe_edge_swipe_title">Swipe from left or right</string>
 	<string name="oobe_edge_swipe_text">Without releasing your finger</string>
-	
+
 	<string name="oobe_open_app_title">Release your finger</string>
 	<string name="oobe_open_app_text">On top of an app to open it</string>
-	
+
 	<string name="oobe_edit_drag_intro">Apps can be dragged and dropped making them easy to edit</string>
 	<string name="oobe_edit_drag_add_title">Drag and drop</string>
 	<string name="oobe_edit_drag_add_text">To right column to add to favorites</string>
-	
+
 	<string name="oobe_edit_drag_remove_title">Drag and drop</string>
 	<string name="oobe_edit_drag_remove_text">To left column to remove from favorites</string>
-	
+
 	<string name="oobe_edit_drag_trade_title">Drag favorites</string>
 	<string name="oobe_edit_drag_trade_text">To swap position</string>
-	
+
 	<string name="oobe_your_apps_intro">Your most used apps all in one place</string>
 	<string name="oobe_your_apps_learning">Your phone learns from you and will remember your most used apps</string>
 	<string name="oobe_your_apps_last_ones">You can also see the last ones you\'ve used</string>
 	<string name="oobe_your_apps_start_using">Start using your phone, the apps will be waiting here for you</string>
-	
+
 	<string name="oobe_start">Start</string>
 	<string name="oobe_back">Back</string>
 	<string name="oobe_skip">Skip</string>
 	<string name="oobe_next">Next</string>
 	<string name="oobe_done">Done</string>
-	
+
 	<!-- Google Apps Install Widget -->
     <string name="google_apps_installer_name">Google Apps Installer</string>
 	<string name="google_apps_initial_title">Install\nGoogle Apps</string>
@@ -415,6 +415,6 @@ s
 	<string name="google_apps_connection_title">Wi-Fi disabled</string>
 	<string name="google_apps_connection_description">The file you’re trying to download is too large for mobile connections (~100MB). Please enable Wi-Fi connection and try again.</string>
 	<string name="updatingSystem">Updating System #8230;</string>
-	
-	
+
+
 </resources>

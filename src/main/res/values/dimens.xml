@@ -4,9 +4,9 @@
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-  
+
           http://www.apache.org/licenses/LICENSE-2.0
-  
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -151,7 +151,7 @@
     <dimen name="workspace_width_gap_port">0dp</dimen>
     <dimen name="workspace_height_gap_land">0dp</dimen>
     <dimen name="workspace_height_gap_port">0dp</dimen>
-    
+
 <!-- EdgeSwipe -->
 	<dimen name="edge_swipe_show_limit">15dp</dimen>
 <!-- 	<dimen name="edge_swipe_up_limit">250dp</dimen> -->
@@ -163,5 +163,5 @@
 <!-- EdgeSwipe deadzones-->
 	<dimen name="edge_swipe_inner_deadzone">75dp</dimen>
 	<dimen name="edge_swipe_outer_deadzone">145dp</dimen>
-	
+
 </resources>
