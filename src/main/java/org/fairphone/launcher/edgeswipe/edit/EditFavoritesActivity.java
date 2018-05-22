@@ -15,13 +15,12 @@
  */
 package org.fairphone.launcher.edgeswipe.edit;
 
-import com.flurry.android.FlurryAgent;
+import java.util.ArrayList;
 
 import org.fairphone.launcher.ApplicationInfo;
 import org.fairphone.launcher.R;
 import org.fairphone.launcher.edgeswipe.ui.EditFavoritesGridView;
 import org.fairphone.launcher.edgeswipe.ui.EditFavoritesGridView.OnEditFavouritesIconDraggedListener;
-import org.fairphone.launcher.util.FlurryHelper;
 
 import android.app.Activity;
 import android.content.ClipData;
@@ -44,8 +43,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 
 /**
  * Edit favorites activity implements functionality to edit your favorite apps
@@ -72,18 +69,6 @@ public class EditFavoritesActivity extends Activity implements
 
 	private int mDragOrigin;
 
-	@Override
-    protected void onStart() {
-        super.onStart();
-        FlurryHelper.startFlurrySession(this);
-    }
-    
-    @Override
-    protected void onStop() {
-        super.onStop();
-        FlurryHelper.endFlurrySession(this);
-    }
-    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -200,7 +185,6 @@ public class EditFavoritesActivity extends Activity implements
 			ApplicationInfo applicationInfo, int idx, boolean performAnimation) {
 
 		if (applicationInfo == null) {
-            FlurryAgent.logEvent(FlurryHelper.EDIT_FAVORITES_REMOVE_ICON);
 			final View dragPlaceholderView = rla.getChildAt(0);
 			final View iconView = rla.getChildAt(1);
 
@@ -215,7 +199,6 @@ public class EditFavoritesActivity extends Activity implements
 			rla.setOnLongClickListener(null);
 			mSelectedApps[idx] = null;
 		} else {
-            FlurryAgent.logEvent(FlurryHelper.EDIT_FAVORITES_ADD_ICON);
 			final View dragPlaceholderView = rla.getChildAt(0);
 
 			final TextView iconView = (TextView) rla.getChildAt(1);
@@ -496,7 +479,6 @@ public class EditFavoritesActivity extends Activity implements
 					// when not removing an icon swap is performed
 					if (!mIsToRemove) {
 						info = mSelectedApps[position];
-						FlurryAgent.logEvent(FlurryHelper.EDIT_FAVORITES_SWAP_ICONS);
 						mListener.setupFavoriteIcon(mFavIcons.get(position),
 								mSelectedApps[id], position, true);
 					} else {
