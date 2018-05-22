@@ -22,12 +22,10 @@ import org.fairphone.launcher.edgeswipe.EdgeSwipeAppMenuHelper;
 import org.fairphone.launcher.edgeswipe.edit.EditFavoritesActivity;
 import org.fairphone.launcher.edgeswipe.edit.FavoritesStorageHelper;
 import org.fairphone.launcher.edgeswipe.ui.EdgeSwipeInterceptorViewListener;
-import org.fairphone.launcher.gappsinstaller.GappsInstallerHelper;
 import org.fairphone.oobe.OOBEActivity;
 import org.fairphone.widgets.appswitcher.AppDiscoverer;
 import org.fairphone.widgets.appswitcher.ApplicationRunInformation;
 import org.fairphone.widgets.appswitcher.WidgetProvider;
-import org.fairphone.widgets.gapps.GoogleAppsInstallerWidget;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
@@ -362,7 +360,6 @@ public final class Launcher extends Activity implements View.OnClickListener,
 			}
 		}
 	};
-	private GappsInstallerHelper mGappsInstaller;
 
 	private FrameLayout mSystemUpdaterWindow;
 
@@ -502,9 +499,6 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 		// setup favorites
 		setupFavoriteApps();
-
-		// setup the gapps installer
-		mGappsInstaller = new GappsInstallerHelper(this);
 	}
 
 	public void persistAppRunInfo(Context context) {
@@ -2513,15 +2507,6 @@ public final class Launcher extends Activity implements View.OnClickListener,
 				.getAppWidgetIds(new ComponentName(this, WidgetProvider.class));
 		if (appWidgetIds.length > 0) {
 			new WidgetProvider().onUpdate(this, appWidgetManager, appWidgetIds);
-		}
-	}
-
-	public void updateGoogleAppsIntallerWidgets() {
-		AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(this);
-		int[] appWidgetIds = appWidgetManager
-				.getAppWidgetIds(new ComponentName(this, GoogleAppsInstallerWidget.class));
-		if (appWidgetIds.length > 0) {
-			new GoogleAppsInstallerWidget().onUpdate(this, appWidgetManager, appWidgetIds);
 		}
 	}
 

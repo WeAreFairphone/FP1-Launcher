@@ -87,18 +87,10 @@
     <integer name="hotseat_all_apps_index">2</integer>
     <!-- must be between 0 and 100 -->
     <integer name="hotseat_item_scale_percentage">100</integer>
-    
+
 <!-- Edge menu -->
 	<string name="edge_swipe_default_apps">com.android.contacts,com.android.contacts.activities.DialtactsActivity;com.android.mms,com.android.mms.ui.BootActivity;com.android.gallery3d,com.android.camera.CameraLauncher;com.android.browser,com.android.browser.BrowserActivity</string>
 	<integer name="config_edgeMenuQuickTime">130</integer>
 	<integer name="config_edgeMenuEditButtonTime">1000</integer>
-	
-<!-- Google Apps Instaler -->
-	<string name="gapps_installer_download_url">http://www.fairphone.com/externalcontent/fp_ga.zip</string>
-	<!--<string name="gapps_installer_download_url">http://www.kwamecorp.com/dev/fairphonegapps.zip</string>-->
-	<string name="gapps_installer_config_file">fairphonegapps</string>
-	<string name="gapps_installer_zip">.zip</string>
-	<string name="gapps_installer_cfg">.cfg</string>
-	<string name="gapps_installer_sig">.sig</string>
-	<string name="gapps_installer_filename">googleapps.zip</string>
+
 </resources>

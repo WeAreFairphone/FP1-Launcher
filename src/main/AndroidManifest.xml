@@ -20,13 +20,13 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.fairphone.launcher">
-    
+
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="17"/>
 
     <!-- <original-package android:name="com.android.launcher2" />  -->
-    
+
     <uses-permission android:name="android.permission.GET_TASKS"/>
-    
+
     <permission
         android:name="com.android.launcher.permission.PRELOAD_WORKSPACE"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
@@ -66,12 +66,12 @@
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    
+
     <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
 	<uses-permission android:name="android.permission.REBOOT"/>
     <!-- Internet access is required for sending crash reports with ACRA -->
     <uses-permission android:name="android.permission.INTERNET" />
-    
+
     <application
         android:name="org.fairphone.launcher.FairphoneApplication"
         android:label="@string/application_name"
@@ -80,7 +80,7 @@
         android:hardwareAccelerated="true"
         android:largeHeap="@bool/config_largeHeap"
         android:supportsRtl="true">
-        
+
         <activity
             android:name="org.fairphone.launcher.Launcher"
             android:label="@string/application_name"
@@ -109,55 +109,43 @@
             <intent-filter>
                 <action android:name="android.intent.action.SET_WALLPAPER" />
                 <category android:name="android.intent.category.DEFAULT" />
-                
+
             </intent-filter>
             <meta-data android:name="android.wallpaper.preview"
                 android:resource="@xml/wallpaper_picker_preview" />
         </activity>
-        
+
         <activity
             android:name="org.fairphone.launcher.edgeswipe.edit.EditFavoritesActivity"
             android:theme="@style/Theme"
             android:screenOrientation="portrait" />
-        
+
         <activity
             android:name="org.fairphone.settings.SettingsActivity"
             android:screenOrientation="portrait" />
-        
+
         <activity
             android:name="org.fairphone.oobe.OOBEActivity"
             android:theme="@style/OOBETheme"
             android:screenOrientation="portrait" />
-               
+
         <activity android:name="DialogAppSwitcherActivity" android:label="@string/app_switcher_dialog_name" android:theme="@android:style/Theme.Dialog"/>
-    
+
         <!-- Widget -->
 	    <receiver android:icon="@drawable/all_apps_button_icon"
 	              android:label="@string/app_switcher_name"
 	              android:name="org.fairphone.widgets.appswitcher.WidgetProvider">
-	      
+
 	      <intent-filter>
 	        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 	      </intent-filter>
-	      
+
 	      <meta-data android:name="android.appwidget.provider"
 	                 android:resource="@xml/widget_provider" />
 	    </receiver>
-	    
-	    <receiver android:icon="@drawable/all_apps_button_icon"
-	              android:label="@string/google_apps_installer_name"
-	              android:name="org.fairphone.widgets.gapps.GoogleAppsInstallerWidget">
-	      
-	       <intent-filter>
-	        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-	      </intent-filter>
-	      
-	      <meta-data android:name="android.appwidget.provider"
-	                 android:resource="@xml/google_apps_widget" />
-	    </receiver>
-	    
-	    <!-- Service 
-	    <service android:name="org.fairphone.widgets.appswitcher.TimerService" 
+
+	    <!-- Service
+	    <service android:name="org.fairphone.widgets.appswitcher.TimerService"
 	        	 android:permission="android.permission.BIND_REMOTEVIEWS" />
 	    <service android:name="org.fairphone.widgets.appswitcher.WidgetServiceRecentApps"
 	             android:permission="android.permission.BIND_REMOTEVIEWS" />
@@ -199,7 +187,7 @@
                 <action android:name="android.intent.action.USER_INITIALIZE" />
             </intent-filter>
         </receiver>
-        
+
         <!-- The settings provider contains Home's data, like the workspace favorites -->
         <provider
             android:name="org.fairphone.launcher.LauncherProvider"
