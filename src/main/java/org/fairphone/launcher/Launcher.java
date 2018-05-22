@@ -134,7 +134,7 @@ import java.util.Set;
 
 /**
  * Default launcher application.
- * 
+ *
  * Fair Phone Changes: =================== . Removed the access to the quick
  * search bar . Removed the access to the hot seat (the locked 5 button row) .
  * Removed the access to the dockdivider . Added AppSwitcher activity . Added
@@ -363,7 +363,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 		}
 	};
 	private GappsInstallerHelper mGappsInstaller;
-	
+
 	private FrameLayout mSystemUpdaterWindow;
 
 	private static ArrayList<PendingAddArguments> sPendingAddList = new ArrayList<PendingAddArguments>();
@@ -502,11 +502,11 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 		// setup favorites
 		setupFavoriteApps();
-		
+
 		// setup the gapps installer
 		mGappsInstaller = new GappsInstallerHelper(this);
 	}
-	
+
 	public void persistAppRunInfo(Context context) {
 		SharedPreferences prefs = context.getSharedPreferences(
 				PREFS_APP_SWITCHER_APPS_DATA, 0);
@@ -586,7 +586,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 		// set the all apps
 		AppDiscoverer.getInstance().setAllRunInfo(allApps);
 	}
-	
+
 	private BroadcastReceiver mBCastAppSwitcherAllApps;
 	private BroadcastReceiver mBCastAppSwitcherReset;
 	private BroadcastReceiver mBCastAppSwitcherLauncher;
@@ -596,10 +596,10 @@ public final class Launcher extends Activity implements View.OnClickListener,
 		unregisterReceiver(mBCastAppSwitcherReset);
 		unregisterReceiver(mBCastAppSwitcherLauncher);
 	}
-	
+
 	private void setupBroadcastReceivers() {
 		// launching the application
-		
+
 		mBCastAppSwitcherAllApps = new BroadcastReceiver() {
 
 			@Override
@@ -608,7 +608,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 				showAllApps(true);
 			}
 		};
-		
+
 		mBCastAppSwitcherReset = new BroadcastReceiver() {
 
 			@Override
@@ -619,7 +619,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 				newFragment.show(getFragmentManager(), "reset");
 			}
 		};
-		
+
 		mBCastAppSwitcherLauncher = new BroadcastReceiver() {
 
 			@Override
@@ -642,17 +642,17 @@ public final class Launcher extends Activity implements View.OnClickListener,
 				}
 			}
 		};
-		
-		
-		
+
+
+
 		registerReceiver(mBCastAppSwitcherAllApps, new IntentFilter(APP_SWITCHER_ALL_APPS));
 
 		registerReceiver(mBCastAppSwitcherReset, new IntentFilter(Launcher.APP_SWITCHER_RESET));
 
 		registerReceiver(mBCastAppSwitcherLauncher, new IntentFilter(Launcher.APP_SWITCHER_LAUNCH_APP));
 	}
-	
-	
+
+
 
 	/**
 	 * Setup the edge favorite apps launcher.
@@ -1033,10 +1033,10 @@ public final class Launcher extends Activity implements View.OnClickListener,
 		// show OOBE
 		startOOBEActivityOnFirstUse(SHOW_OOBE_EDGE_SWIPE_MENU,
 				OOBEActivity.OOBE_DEVICE_TUTORIAL);
-		
+
 		// broadcast receivers for the appSwitcher
 		setupBroadcastReceivers();
-		
+
 		// setup favorites
 		if(mAppMenuHelper == null){
             setupFavoriteApps();
@@ -1060,7 +1060,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 		mDragController.resetLastGestureUpTime();
 
 		persistAppRunInfo(this);
-		
+
 		clearAppSwitcherBroadcastReceivers();
 	}
 
@@ -1137,7 +1137,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Restores the previous state, if it exists.
-	 * 
+	 *
 	 * @param savedState
 	 *            The previous state.
 	 */
@@ -1252,21 +1252,21 @@ public final class Launcher extends Activity implements View.OnClickListener,
 		if (mSearchDropTargetBar != null) {
 			mSearchDropTargetBar.setup(this, dragController);
 		}
-		
-		// 
+
+		//
 		mSystemUpdaterWindow = (FrameLayout)findViewById(R.id.systemUpdater);
-		
+
 		mSystemUpdaterWindow.setVisibility( View.GONE );
 	}
-	
-	
+
+
 
 	/**
 	 * Creates a view representing a shortcut.
-	 * 
+	 *
 	 * @param info
 	 *            The data structure describing the shortcut.
-	 * 
+	 *
 	 * @return A View inflated from R.layout.application.
 	 */
 	View createShortcut(ShortcutInfo info) {
@@ -1278,14 +1278,14 @@ public final class Launcher extends Activity implements View.OnClickListener,
 	/**
 	 * Creates a view representing a shortcut inflated from the specified
 	 * resource.
-	 * 
+	 *
 	 * @param layoutResId
 	 *            The id of the XML layout used to create the shortcut.
 	 * @param parent
 	 *            The group the shortcut belongs to.
 	 * @param info
 	 *            The data structure describing the shortcut.
-	 * 
+	 *
 	 * @return A View inflated from layoutResId.
 	 */
 	View createShortcut(int layoutResId, ViewGroup parent, ShortcutInfo info) {
@@ -1298,7 +1298,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Add an application shortcut to the workspace.
-	 * 
+	 *
 	 * @param data
 	 *            The intent describing the application.
 	 * @param cellInfo
@@ -1336,7 +1336,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Add a shortcut to the workspace.
-	 * 
+	 *
 	 * @param data
 	 *            The intent describing the shortcut.
 	 * @param cellInfo
@@ -1433,7 +1433,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Add a widget to the workspace.
-	 * 
+	 *
 	 * @param appWidgetId
 	 *            The app widget id
 	 * @param cellInfo
@@ -1575,7 +1575,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 		if (mAttached) {
 			unregisterReceiver(mReceiver);
-			
+
 			mAttached = false;
 		}
 		updateRunning();
@@ -2085,7 +2085,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Process a shortcut drop.
-	 * 
+	 *
 	 * @param componentName
 	 *            The name of the component
 	 * @param screen
@@ -2114,7 +2114,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Process a widget drop.
-	 * 
+	 *
 	 * @param info
 	 *            The PendingAppWidgetInfo of the widget being added.
 	 * @param screen
@@ -2291,7 +2291,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Launches the intent referred by the clicked shortcut.
-	 * 
+	 *
 	 * @param v
 	 *            The view representing the clicked shortcut.
 	 */
@@ -2347,7 +2347,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Event handler for the search button
-	 * 
+	 *
 	 * @param v
 	 *            The view that was clicked.
 	 */
@@ -2359,7 +2359,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Event handler for the voice button
-	 * 
+	 *
 	 * @param v
 	 *            The view that was clicked.
 	 */
@@ -2386,7 +2386,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 	/**
 	 * Event handler for the "grid" button that appears on the home screen,
 	 * which enters all apps mode.
-	 * 
+	 *
 	 * @param v
 	 *            The view that was clicked.
 	 */
@@ -2515,7 +2515,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 			new WidgetProvider().onUpdate(this, appWidgetManager, appWidgetIds);
 		}
 	}
-	
+
 	public void updateGoogleAppsIntallerWidgets() {
 		AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(this);
 		int[] appWidgetIds = appWidgetManager
@@ -2739,7 +2739,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 	 * Opens the user folder described by the specified tag. The opening of the
 	 * folder is animated relative to the specified View. If the View is null,
 	 * no animation is played.
-	 * 
+	 *
 	 * @param folderInfo
 	 *            The FolderInfo describing the folder to open.
 	 */
@@ -2869,7 +2869,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Helper method for the cameraZoomIn/cameraZoomOut animations
-	 * 
+	 *
 	 * @param view
 	 *            The view being animated
 	 * @param scaleFactor
@@ -3136,7 +3136,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 	/**
 	 * Zoom the camera back into the workspace, hiding 'fromView'. This is the
 	 * opposite of showAppsCustomizeHelper.
-	 * 
+	 *
 	 * @param animated
 	 *            If true, the transition will be animated.
 	 */
@@ -3641,14 +3641,14 @@ public final class Launcher extends Activity implements View.OnClickListener,
 	/**
 	 * If the activity is currently paused, signal that we need to re-run the
 	 * loader in onResume.
-	 * 
+	 *
 	 * This needs to be called from incoming places where resources might have
 	 * been loaded while we are paused. That is becaues the Configuration might
 	 * be wrong when we're not running, and if it comes back to what it was when
 	 * we were paused, we are not restarted.
-	 * 
+	 *
 	 * Implementation of the method from LauncherModel.Callbacks.
-	 * 
+	 *
 	 * @return true if we are currently paused. The caller might be able to skip
 	 *         some work in that case since we will come back again.
 	 */
@@ -3675,7 +3675,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Refreshes the shortcuts shown on the workspace.
-	 * 
+	 *
 	 * Implementation of the method from LauncherModel.Callbacks.
 	 */
 	public void startBinding() {
@@ -3697,7 +3697,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Bind the items start-end from the list.
-	 * 
+	 *
 	 * Implementation of the method from LauncherModel.Callbacks.
 	 */
 	public void bindItems(ArrayList<ItemInfo> shortcuts, int start, int end) {
@@ -3770,7 +3770,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Add the views for a widget to the workspace.
-	 * 
+	 *
 	 * Implementation of the method from LauncherModel.Callbacks.
 	 */
 	public void bindAppWidget(LauncherAppWidgetInfo item) {
@@ -3814,7 +3814,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Callback saying that there aren't any more items to bind.
-	 * 
+	 *
 	 * Implementation of the method from LauncherModel.Callbacks.
 	 */
 	public void finishBindingItems() {
@@ -3886,7 +3886,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 	/**
 	 * Runs a new animation that scales up icons that were added while Launcher
 	 * was in the background.
-	 * 
+	 *
 	 * @param immediate
 	 *            whether to run the animation or show the results immediately
 	 */
@@ -3965,7 +3965,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Add the icons for all apps.
-	 * 
+	 *
 	 * Implementation of the method from LauncherModel.Callbacks.
 	 */
 	public void bindAllApplications(final ArrayList<ApplicationInfo> apps) {
@@ -4000,7 +4000,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * A package was installed.
-	 * 
+	 *
 	 * Implementation of the method from LauncherModel.Callbacks.
 	 */
 	public void bindAppsAdded(ArrayList<ApplicationInfo> apps) {
@@ -4027,7 +4027,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * A package was updated.
-	 * 
+	 *
 	 * Implementation of the method from LauncherModel.Callbacks.
 	 */
 	public void bindAppsUpdated(ArrayList<ApplicationInfo> apps) {
@@ -4058,7 +4058,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * A package was uninstalled.
-	 * 
+	 *
 	 * Implementation of the method from LauncherModel.Callbacks.
 	 */
 	public void bindAppsRemoved(ArrayList<String> packageNames,
@@ -4100,10 +4100,10 @@ public final class Launcher extends Activity implements View.OnClickListener,
 		for (ApplicationRunInformation appToRemove : appsToRemove) {
 			AppDiscoverer.getInstance().applicationRemoved(
 					appToRemove.getComponentName());
-			
+
 			FavoritesStorageHelper.updateFavorites(this, appToRemove.getComponentName());
         }
-        
+
         if(!appsToRemove.isEmpty()){
             mAppMenuHelper.updateIcons();
         }
@@ -4452,10 +4452,10 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 		return result;
 	}
-	
+
 	/**
 	 * Show OOBE tutorial on first use of Edge Swipe, Edit Favorites, etc...
-	 * 
+	 *
 	 * @param oobeToShow
 	 *            Activity identifier: SHOW_OOBE_EDIT_FAVORITES or
 	 *            SHOW_OOBE_EDGE_SWIPE_MENU
@@ -4482,7 +4482,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 	/**
 	 * Starts the OOBEActivity in the selected tutorial
-	 * 
+	 *
 	 * @param oobeTutorial
 	 *            Tutorial to show: OOBEActivity.OOBE_EDIT_FAVORITES_TUTORIAL,
 	 *            OOBEActivity.OOBE_EDGE_SWIPE_TUTORIAL,

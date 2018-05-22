@@ -26,7 +26,7 @@
         launcher:y="0"
         launcher:spanX="4"
         launcher:spanY="3" />
-    <!-- 
+    <!--
      <favorite
         launcher:packageName="com.android.settings"
         launcher:className="com.android.settings.Settings"
@@ -35,7 +35,7 @@
         launcher:y="4" />
      -->
      <!-- Middle screen [2] -->
-   
+
      <appwidget
         launcher:packageName="org.fairphone.fairphonepeaceofmindapp"
         launcher:className="org.fairphone.peaceofmind.widget.WidgetProvider"
@@ -44,7 +44,7 @@
         launcher:y="0"
         launcher:spanX="4"
         launcher:spanY="3" />
-     
+
      <appwidget
         launcher:packageName="org.fairphone.launcher"
         launcher:className="org.fairphone.widgets.gapps.GoogleAppsInstallerWidget"
@@ -55,7 +55,7 @@
         launcher:spanY="3" />
 
     <!-- Right screen [3] -->
-    
+
        <appwidget
         launcher:packageName="org.fairphone.launcher"
         launcher:className="org.fairphone.widgets.appswitcher.WidgetProvider"
@@ -66,9 +66,9 @@
         launcher:spanY="6" />
 
     <!-- Far-right screen [4] -->
-	
+
     <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
-    
+
     <favorite
         launcher:packageName="com.android.contacts"
         launcher:className="com.android.contacts.activities.DialtactsActivity"
