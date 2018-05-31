@@ -15,7 +15,7 @@
 -->
 <community.fairphone.launcher.Cling
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res/community.fairphone.launcher"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
     launcher:drawIdentifier="folder_portrait">
     <FrameLayout
         android:layout_width="match_parent"

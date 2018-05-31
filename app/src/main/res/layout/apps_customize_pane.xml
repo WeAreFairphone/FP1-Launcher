@@ -17,7 +17,7 @@
 -->
 <community.fairphone.launcher.AppsCustomizeTabHost
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res/community.fairphone.launcher"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/apps_widgets_bg"
     >
     <LinearLayout
