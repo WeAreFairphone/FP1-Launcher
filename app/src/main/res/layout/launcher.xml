@@ -207,7 +207,7 @@
         </LinearLayout>
     </FrameLayout>
     <!--
-    <org.fairphone.launcher.edgeswipe.ui.AppEdgeSwipeInterceptorView
+    <community.fairphone.launcher.edgeswipe.ui.AppEdgeSwipeInterceptorView
         android:id="@+id/selectDetector"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -217,7 +217,7 @@
             android:id="@+id/appMenuContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </org.fairphone.launcher.edgeswipe.ui.AppEdgeSwipeInterceptorView>
+    </community.fairphone.launcher.edgeswipe.ui.AppEdgeSwipeInterceptorView>
     -->
 
 </FrameLayout>

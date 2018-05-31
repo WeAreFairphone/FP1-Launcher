@@ -66,7 +66,7 @@ public class LauncherProvider extends ContentProvider {
 
     private static final int DATABASE_VERSION = 12;
 
-    static final String AUTHORITY = "org.fairphone.launcher.settings";
+    static final String AUTHORITY = "community.fairphone.launcher.settings";
 
     static final String TABLE_FAVORITES = "favorites";
     static final String PARAMETER_NOTIFY = "notify";
