@@ -60,7 +60,7 @@ import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

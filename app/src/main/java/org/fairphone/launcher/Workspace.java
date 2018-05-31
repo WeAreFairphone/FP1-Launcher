@@ -53,7 +53,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;

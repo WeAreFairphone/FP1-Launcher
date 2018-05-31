@@ -25,7 +25,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RemoteViews;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 /**
  * {@inheritDoc}

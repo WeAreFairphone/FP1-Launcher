@@ -15,7 +15,7 @@
  */
 package org.fairphone.oobe.animation;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 import org.fairphone.oobe.utils.KWAnimation;
 import org.fairphone.oobe.utils.KWAnimation.KWValueAnimation;
 import org.fairphone.oobe.utils.KWAnimation.KWValueType;
@@ -236,9 +236,9 @@ public class EditFavsTutorialAnimationView extends FrameLayout
     }
 
     /*****************************************
-     * 
+     *
      * setupRemoveFavAnimation()
-     * 
+     *
      *****************************************/
 
     private void setupRemoveFavAnimation()
@@ -376,9 +376,9 @@ public class EditFavsTutorialAnimationView extends FrameLayout
     }
 
     /*****************************************
-     * 
+     *
      * setupAddFavAnimation()
-     * 
+     *
      *****************************************/
 
     private void setupAddFavAnimation()
@@ -508,9 +508,9 @@ public class EditFavsTutorialAnimationView extends FrameLayout
     }
 
     /*****************************************
-     * 
+     *
      * setupMoveFavAnimation()
-     * 
+     *
      *****************************************/
 
     private void setupMoveFavAnimation()

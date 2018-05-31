@@ -18,7 +18,7 @@ package org.fairphone.launcher.edgeswipe.edit;
 import java.util.ArrayList;
 
 import org.fairphone.launcher.ApplicationInfo;
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 import org.fairphone.launcher.edgeswipe.ui.EditFavoritesGridView;
 import org.fairphone.launcher.edgeswipe.ui.EditFavoritesGridView.OnEditFavouritesIconDraggedListener;
 
@@ -239,7 +239,7 @@ public class EditFavoritesActivity extends Activity implements
 
 	/**
 	 * Update the icon and label of a favorite
-	 * 
+	 *
 	 * @param applicationInfo
 	 *            App information that contains the icon and label
 	 * @param icon
@@ -261,7 +261,7 @@ public class EditFavoritesActivity extends Activity implements
 
 	/**
 	 * Performs the animation when replacing one favorite
-	 * 
+	 *
 	 * @param viewToFadeIn
 	 *            view that will appear. When null it means that we are swapping
 	 *            two favorites
@@ -329,7 +329,7 @@ public class EditFavoritesActivity extends Activity implements
 
 	/**
 	 * Serializes the item id and origin that is being dragged.
-	 * 
+	 *
 	 * @param appOrigin
 	 *            the origin: can be SELECT_APPS_DRAG or ALL_APPS_DRAG
 	 * @param appIndex
@@ -343,7 +343,7 @@ public class EditFavoritesActivity extends Activity implements
 
 	/**
 	 * Deserializes the item id and origin that is being dragged.
-	 * 
+	 *
 	 * @param toDeserialize
 	 *            string to deserialize
 	 * @return an array containing {appOrign, appIndex}
@@ -634,7 +634,7 @@ public class EditFavoritesActivity extends Activity implements
 	/**
 	 * Display a circle around the favorite possible positions when configuring
 	 * it
-	 * 
+	 *
 	 * @param selectedFavorite
 	 *            the favorite position that will not be circled. -1 means that
 	 *            all circles will be shown.

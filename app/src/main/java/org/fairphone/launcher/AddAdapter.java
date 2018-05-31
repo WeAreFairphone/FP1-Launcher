@@ -28,7 +28,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 /**
  * Adapter showing the types of items that can be added to a {@link Workspace}.

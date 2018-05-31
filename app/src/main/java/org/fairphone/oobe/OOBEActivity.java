@@ -18,7 +18,7 @@ package org.fairphone.oobe;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 import org.fairphone.oobe.animation.AddFavTutorialAnimationHelper;
 import org.fairphone.oobe.animation.EdgeSwipeTutorialAnimationHelper;
 import org.fairphone.oobe.animation.MoveFavTutorialAnimationHelper;

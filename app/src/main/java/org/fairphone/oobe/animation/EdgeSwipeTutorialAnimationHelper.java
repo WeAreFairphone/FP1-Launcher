@@ -15,7 +15,7 @@
  */
 package org.fairphone.oobe.animation;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 import org.fairphone.oobe.animation.MenuTutorialAnimationView.MenuTutorialAnimationViewListener;
 
 import android.content.Context;
@@ -33,21 +33,21 @@ public class EdgeSwipeTutorialAnimationHelper implements TutorialAnimationHelper
     Context context;
     TutorialAnimationHelperListener listener;
     TutorialState curState = TutorialState.IdleInvisible;
-    
-    
+
+
     @Override
     public View setup(Context context)
     {
         this.context = context;
-        
+
         rootView = LayoutInflater.from(context).inflate(R.layout.tutorial_open_app_layout, null);
         animView = (MenuTutorialAnimationView)rootView.findViewById(R.id.openAppAnimationView);
-        
+
         animView.playSwipeAnimation();
         animView.stopAnimations();
-        
+
         animView.setMenuTutorialAnimationViewListener(this);
-        
+
         return rootView;
     }
 
@@ -60,12 +60,12 @@ public class EdgeSwipeTutorialAnimationHelper implements TutorialAnimationHelper
 
     int curAnimationId = 0;
     TutorialViewAnimationListener curStateAnimationListener;
-    
+
     private TutorialViewAnimationListener getCurStateAnimationListener()
     {
         return curStateAnimationListener;
     }
-    
+
     @Override
     public boolean playIntro()
     {
@@ -76,7 +76,7 @@ public class EdgeSwipeTutorialAnimationHelper implements TutorialAnimationHelper
         fadeAnim.setAnimationListener(getCurStateAnimationListener());
         rootView.setVisibility(View.VISIBLE);
         rootView.startAnimation(fadeAnim);
-        
+
         return true;
     }
 
@@ -86,18 +86,18 @@ public class EdgeSwipeTutorialAnimationHelper implements TutorialAnimationHelper
     {
         if(curState!=TutorialState.IdleVisible)
             return false;
-        
+
         startAnimationState(TutorialState.Main,null);
         animView.playSwipeAnimation();
         return true;
     }
-    
+
     @Override
     public boolean playOutro()
     {
         if(curState==TutorialState.Outro)
             return false;
-        
+
         startAnimationState(TutorialState.Outro, new Runnable()
         {
             @Override
@@ -109,16 +109,16 @@ public class EdgeSwipeTutorialAnimationHelper implements TutorialAnimationHelper
         Animation fadeAnim = AnimationUtils.loadAnimation(context, R.anim.tutorial_outro);
         fadeAnim.setAnimationListener(getCurStateAnimationListener());
         rootView.startAnimation(fadeAnim);
-        
+
         return true;
     }
-    
+
     private void startState(TutorialState newState)
     {
         curState = newState;
         curAnimationId++;
     }
-    
+
     private void startAnimationState(TutorialState newState, Runnable runnable)
     {
         curState = newState;
@@ -132,7 +132,7 @@ public class EdgeSwipeTutorialAnimationHelper implements TutorialAnimationHelper
         {
             return;
         }
-        
+
         if(curState==TutorialState.Intro)
         {
             startState(TutorialState.IdleVisible);
@@ -160,7 +160,7 @@ public class EdgeSwipeTutorialAnimationHelper implements TutorialAnimationHelper
             }
         }
     }
-    
+
 
     private class TutorialViewAnimationListener implements AnimationListener
     {
@@ -168,18 +168,18 @@ public class EdgeSwipeTutorialAnimationHelper implements TutorialAnimationHelper
         int finishNum=0;
         int animationId;
         Runnable runnable;
-        
+
         public TutorialViewAnimationListener(int animationid, Runnable runnable)
         {
             this.animationId = animationid;
             this.runnable = runnable;
         }
-        
+
         int getAnimationId()
         {
             return animationId;
         }
-        
+
         @Override
         public void onAnimationStart(Animation animation)
         {

@@ -18,7 +18,7 @@ package org.fairphone.launcher.edgeswipe;
 import org.fairphone.launcher.ApplicationInfo;
 import org.fairphone.launcher.DragController;
 import org.fairphone.launcher.Launcher;
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 import org.fairphone.launcher.edgeswipe.edit.FavoritesStorageHelper;
 import org.fairphone.launcher.edgeswipe.ui.EdgeSwipeInterceptorViewListener;
 import org.fairphone.launcher.util.KWMathUtils;

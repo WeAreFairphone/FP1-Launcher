@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.fairphone.launcher.Launcher;
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;

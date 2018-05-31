@@ -48,7 +48,7 @@ import android.os.RemoteException;
 import android.os.SystemClock;
 import android.util.Log;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import java.lang.ref.WeakReference;
 import java.net.URISyntaxException;
@@ -184,7 +184,7 @@ public class LauncherModel extends BroadcastReceiver {
         final Resources res = app.getResources();
         mAllAppsLoadDelay = res.getInteger(R.integer.config_allAppsBatchLoadDelay); // config.xml
         mBatchSize = res.getInteger(R.integer.config_allAppsBatchSize); // config.xml
-        // gets the configuration 
+        // gets the configuration
         // http://developer.android.com/reference/android/content/res/Configuration.html
         Configuration config = res.getConfiguration();
         // IMSI MCC (Mobile Country Code), corresponding to mcc resource qualifier.
@@ -1941,7 +1941,7 @@ public class LauncherModel extends BroadcastReceiver {
                         + (SystemClock.uptimeMillis()-t) + "ms"
                         + (mAllAppsLoadDelay > 0 ? " (including delay)" : ""));
             }
-            
+
             AppDiscoverer.getInstance().loadAllApps(mBgAllAppsList.data);
         }
 
@@ -2075,7 +2075,7 @@ public class LauncherModel extends BroadcastReceiver {
                     }
                 }
             });
-            
+
             // update the new data
             AppDiscoverer.getInstance().loadAllApps(mBgAllAppsList.data);
         }

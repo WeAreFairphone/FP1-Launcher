@@ -40,7 +40,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import java.util.ArrayList;
 

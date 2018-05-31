@@ -26,7 +26,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.widget.Toast;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;

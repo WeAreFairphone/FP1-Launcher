@@ -15,7 +15,7 @@
 -->
 <org.fairphone.launcher.Hotseat
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res/org.fairphone.launcher"
+    xmlns:launcher="http://schemas.android.com/apk/res/community.fairphone.launcher"
     launcher:cellCountX="@integer/hotseat_cell_count"
     launcher:cellCountY="1">
     <org.fairphone.launcher.CellLayout

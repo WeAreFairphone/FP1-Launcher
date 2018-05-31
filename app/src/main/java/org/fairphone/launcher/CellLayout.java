@@ -50,7 +50,7 @@ import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LayoutAnimationController;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

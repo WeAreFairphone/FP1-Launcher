@@ -18,7 +18,7 @@ package org.fairphone.launcher.edgeswipe.edit;
 import java.util.ArrayList;
 
 import org.fairphone.launcher.ApplicationInfo;
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import android.app.Activity;
 import android.graphics.drawable.BitmapDrawable;
@@ -31,10 +31,10 @@ import android.widget.TextView;
 
 
 public class AllAppsListAdapter extends BaseAdapter
-{    
+{
     private Activity context;
     private ArrayList<ApplicationInfo> allApps;
-    
+
     static class ViewHolder
     {
         public TextView appName;
@@ -69,7 +69,7 @@ public class AllAppsListAdapter extends BaseAdapter
         ApplicationInfo applicationInfo = allApps.get(position);
         holder.appName.setText(applicationInfo.getApplicationTitle());
         holder.appImage.setImageDrawable(new BitmapDrawable(context.getResources(), applicationInfo.iconBitmap));
-        
+
         return rowView;
     }
 

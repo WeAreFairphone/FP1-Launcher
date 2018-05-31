@@ -16,7 +16,7 @@
 package org.fairphone.launcher.edgeswipe.edit;
 
 import org.fairphone.launcher.ApplicationInfo;
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -41,7 +41,7 @@ public abstract class FavoritesStorageHelper
     private static final String FAVORITES_APPS_KEY = "FAVORITES_APPS_KEY";
 
 	private static final String TAG = "FavoritesStorageHelper";
-	
+
 	private static int MAX_FAVORITE_APPS = 4;
 
     /**
@@ -51,7 +51,7 @@ public abstract class FavoritesStorageHelper
     public static ApplicationInfo[] loadSelectedApps(Context context, int maxApps)
     {
         ApplicationInfo[] selectedAppArray = new ApplicationInfo[maxApps];
-        
+
         SharedPreferences sharedPreferences = context.getSharedPreferences(FAVORITES_APPS_SHARED_PREFERENCES_FILE_NAME, Activity.MODE_PRIVATE);
 
         String componentNamesString = sharedPreferences.getString(FAVORITES_APPS_KEY, null);
@@ -59,15 +59,15 @@ public abstract class FavoritesStorageHelper
         if (componentNamesString == null || componentNamesString.length() == 0){
         	componentNamesString = getDefaultEdgeSwipeApps(context);
         }
-        
+
         if (componentNamesString != null)
         {
 //        	Log.d(TAG, "loading selected apps - {" + componentNamesString + "}");
-        	
+
             ArrayList<ComponentName> componentNames = FavoritesStorageHelper.stringToComponentNameArray(componentNamesString);
-            
+
             final PackageManager packageManager = context.getApplicationContext().getPackageManager();
-            
+
             for (int i = 0; i < Math.min(componentNames.size(), selectedAppArray.length ); i++)
             {
             	ApplicationInfo applicationInfo = null;
@@ -75,11 +75,11 @@ public abstract class FavoritesStorageHelper
                 if(currentComponentName != null){
                 	applicationInfo = AppDiscoverer.getInstance().getApplicationFromComponentName(currentComponentName);
                 }
-                
+
                 selectedAppArray[i] = applicationInfo;
             }
         }
-        
+
         return selectedAppArray;
     }
 
@@ -97,9 +97,9 @@ public abstract class FavoritesStorageHelper
         if ((mSelectedApps != null) && (mSelectedApps.length > 0))
         {
             ArrayList<ComponentName> componentNamesArray = new ArrayList<ComponentName>();
-            
+
             for (int i = 0; i < mSelectedApps.length; i++) {
-            	
+
             	ApplicationInfo applicationInfo = mSelectedApps[i];
 
             	if(applicationInfo != null) {
@@ -114,7 +114,7 @@ public abstract class FavoritesStorageHelper
 
             SharedPreferences sharedPreferences = context.getSharedPreferences(FAVORITES_APPS_SHARED_PREFERENCES_FILE_NAME, Activity.MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPreferences.edit();
-            
+
             editor.putString(FAVORITES_APPS_KEY, componentNamesString);
             editor.commit();
         }
@@ -154,7 +154,7 @@ public abstract class FavoritesStorageHelper
 
         return FavoritesStorageHelper.arrayToString(componentNamesStringArray, COMPONENT_NAME_DELIMITER);
     }
-    
+
     /**
      * Convert a string into an array of strings, using the delimiter as
      * separator.
@@ -162,7 +162,7 @@ public abstract class FavoritesStorageHelper
     public static String[] stringToArray(String input, String delimiter){
         return input.split(delimiter);
     }
-	
+
 	public static ArrayList<ComponentName> stringToComponentNameArray(String input) {
 		String[] componentNamesStringArray = FavoritesStorageHelper.stringToArray(input, COMPONENT_NAME_DELIMITER);
 		ArrayList<ComponentName> componentNamesArray = new ArrayList<ComponentName>();
@@ -180,17 +180,17 @@ public abstract class FavoritesStorageHelper
 
 	public static void resetFavoritesToDefault(Context context) {
 		SharedPreferences sharedPreferences = context.getSharedPreferences(FAVORITES_APPS_SHARED_PREFERENCES_FILE_NAME, Activity.MODE_PRIVATE);
-		
+
 		SharedPreferences.Editor editor = sharedPreferences.edit();
 		editor.putString(FAVORITES_APPS_KEY, null);
 		editor.commit();
-		
+
 		loadSelectedApps(context, MAX_FAVORITE_APPS);
 	}
-	
+
 	public static void updateFavorites(Context context, ComponentName componentName) {
         ApplicationInfo[] currentApps = loadSelectedApps(context, MAX_FAVORITE_APPS);
-        
+
         for (ApplicationInfo appInfo : currentApps) {
             if(appInfo != null){
                 if(appInfo.componentName != null && appInfo.componentName.equals(componentName)){

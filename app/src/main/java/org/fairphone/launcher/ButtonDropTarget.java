@@ -25,7 +25,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 
 /**
