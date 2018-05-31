@@ -20,7 +20,7 @@ package org.fairphone.launcher;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import android.app.WallpaperManager;
 import android.content.BroadcastReceiver;

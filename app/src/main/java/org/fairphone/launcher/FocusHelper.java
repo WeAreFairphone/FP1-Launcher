@@ -25,7 +25,7 @@ import android.view.ViewParent;
 import android.widget.TabHost;
 import android.widget.TabWidget;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -15,7 +15,7 @@
  */
 package org.fairphone.oobe.animation;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 import org.fairphone.oobe.animation.EditFavsTutorialAnimationView.EditFavsTutorialAnimationViewListener;
 
 import android.content.Context;
@@ -33,21 +33,21 @@ public class RemoveFavTutorialAnimationHelper implements TutorialAnimationHelper
     Context context;
     TutorialAnimationHelperListener listener;
     TutorialState curState = TutorialState.IdleInvisible;
-    
-    
+
+
     @Override
     public View setup(Context context)
     {
         this.context = context;
-        
+
         rootView = LayoutInflater.from(context).inflate(R.layout.tutorial_edit_fav_remove_layout, null);
         animView = (EditFavsTutorialAnimationView)rootView.findViewById(R.id.editFavRemoveAnimationView);
-        
+
         animView.playRemoveFavAnimation();
         animView.stopAnimations();
-        
+
         animView.setEditFavsTutorialAnimationViewListener(this);
-        
+
         return rootView;
     }
 
@@ -60,12 +60,12 @@ public class RemoveFavTutorialAnimationHelper implements TutorialAnimationHelper
 
     int curAnimationId = 0;
     TutorialViewAnimationListener curStateAnimationListener;
-    
+
     private TutorialViewAnimationListener getCurStateAnimationListener()
     {
         return curStateAnimationListener;
     }
-    
+
     @Override
     public boolean playIntro()
     {
@@ -85,18 +85,18 @@ public class RemoveFavTutorialAnimationHelper implements TutorialAnimationHelper
     {
         if(curState!=TutorialState.IdleVisible)
             return false;
-        
+
         startAnimationState(TutorialState.Main,null);
         animView.playRemoveFavAnimation();
         return true;
     }
-    
+
     @Override
     public boolean playOutro()
     {
         if(curState==TutorialState.Outro)
             return false;
-        
+
         startAnimationState(TutorialState.Outro, new Runnable()
         {
             @Override
@@ -108,16 +108,16 @@ public class RemoveFavTutorialAnimationHelper implements TutorialAnimationHelper
         Animation fadeAnim = AnimationUtils.loadAnimation(context, R.anim.tutorial_outro);
         fadeAnim.setAnimationListener(getCurStateAnimationListener());
         rootView.startAnimation(fadeAnim);
-        
+
         return true;
     }
-    
+
     private void startState(TutorialState newState)
     {
         curState = newState;
         curAnimationId++;
     }
-    
+
     private void startAnimationState(TutorialState newState, Runnable runnable)
     {
         curState = newState;
@@ -131,7 +131,7 @@ public class RemoveFavTutorialAnimationHelper implements TutorialAnimationHelper
         {
             return;
         }
-        
+
         if(curState==TutorialState.Intro)
         {
             startState(TutorialState.IdleVisible);
@@ -159,7 +159,7 @@ public class RemoveFavTutorialAnimationHelper implements TutorialAnimationHelper
             }
         }
     }
-    
+
 
     private class TutorialViewAnimationListener implements AnimationListener
     {
@@ -167,18 +167,18 @@ public class RemoveFavTutorialAnimationHelper implements TutorialAnimationHelper
         int finishNum=0;
         int animationId;
         Runnable runnable;
-        
+
         public TutorialViewAnimationListener(int animationid, Runnable runnable)
         {
             this.animationId = animationid;
             this.runnable = runnable;
         }
-        
+
         int getAnimationId()
         {
             return animationId;
         }
-        
+
         @Override
         public void onAnimationStart(Animation animation)
         {

@@ -19,7 +19,7 @@
 
 <!-- Full screen view projects under the status bar and contains the background -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res/org.fairphone.launcher"
+    xmlns:launcher="http://schemas.android.com/apk/res/community.fairphone.launcher"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/launcher"
     android:layout_width="match_parent"
@@ -27,7 +27,7 @@
 
     <org.fairphone.launcher.DragLayer
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:launcher="http://schemas.android.com/apk/res/org.fairphone.launcher"
+        xmlns:launcher="http://schemas.android.com/apk/res/community.fairphone.launcher"
         android:id="@+id/drag_layer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -61,7 +61,7 @@
             android:paddingTop="@dimen/workspace_top_padding"
             android:paddingBottom="@dimen/workspace_bottom_padding"
             launcher:pageSpacing="@dimen/workspace_page_spacing"
-            
+
             launcher:scrollIndicatorPaddingLeft="@dimen/workspace_divider_padding_left"
             launcher:scrollIndicatorPaddingRight="@dimen/workspace_divider_padding_right"
         -->
@@ -137,7 +137,7 @@
             android:visibility="gone" />
 
         <!--
-        FPNOTE Removed this because it launched the voice 
+        FPNOTE Removed this because it launched the voice
         <org.fairphone.launcher.DrawableStateProxyView
             android:id="@+id/voice_button_proxy"
             android:layout_width="80dp"
@@ -191,7 +191,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="#33b5e5" />
-            
+
             <TextView
                 android:id="@+id/currentVersionTitleSeparator"
                 android:layout_width="match_parent"
@@ -203,7 +203,7 @@
                 android:textAllCaps="true"
                 android:textColor="#d3d3d3"
                 android:textSize="15sp" />
-            
+
         </LinearLayout>
     </FrameLayout>
     <!--

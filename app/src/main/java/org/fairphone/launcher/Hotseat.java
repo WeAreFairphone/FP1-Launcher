@@ -27,7 +27,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 public class Hotseat extends FrameLayout {
     @SuppressWarnings("unused")

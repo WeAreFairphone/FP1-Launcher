@@ -34,7 +34,7 @@ import android.widget.TabHost;
 import android.widget.TabWidget;
 import android.widget.TextView;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import java.util.ArrayList;
 

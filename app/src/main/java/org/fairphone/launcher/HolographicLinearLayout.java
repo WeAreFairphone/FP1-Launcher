@@ -26,7 +26,7 @@ import android.util.AttributeSet;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 public class HolographicLinearLayout extends LinearLayout {
 

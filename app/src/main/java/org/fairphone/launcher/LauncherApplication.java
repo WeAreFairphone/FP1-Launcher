@@ -28,7 +28,7 @@ import android.database.ContentObserver;
 import android.os.Handler;
 import android.util.Log;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import java.lang.ref.WeakReference;
 

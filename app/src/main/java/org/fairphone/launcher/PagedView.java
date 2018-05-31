@@ -43,7 +43,7 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import java.util.ArrayList;
 

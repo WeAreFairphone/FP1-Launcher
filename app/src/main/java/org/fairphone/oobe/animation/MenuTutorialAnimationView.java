@@ -15,7 +15,7 @@
  */
 package org.fairphone.oobe.animation;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 import org.fairphone.oobe.utils.KWAnimation;
 import org.fairphone.oobe.utils.KWAnimation.KWValueAnimation;
 import org.fairphone.oobe.utils.KWAnimation.KWValueType;

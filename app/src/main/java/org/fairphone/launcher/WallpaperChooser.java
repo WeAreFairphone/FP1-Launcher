@@ -17,7 +17,7 @@
 
 package org.fairphone.launcher;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import android.app.Activity;
 import android.app.DialogFragment;

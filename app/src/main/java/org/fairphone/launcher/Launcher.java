@@ -27,6 +27,8 @@ import org.fairphone.widgets.appswitcher.AppDiscoverer;
 import org.fairphone.widgets.appswitcher.ApplicationRunInformation;
 import org.fairphone.widgets.appswitcher.WidgetProvider;
 
+import community.fairphone.launcher.R;
+
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.animation.Animator;

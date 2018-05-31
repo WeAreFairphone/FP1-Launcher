@@ -42,7 +42,7 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.SpinnerAdapter;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import java.io.IOException;
 import java.util.ArrayList;

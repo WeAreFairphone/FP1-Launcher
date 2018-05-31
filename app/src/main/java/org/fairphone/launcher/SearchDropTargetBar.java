@@ -28,7 +28,7 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.FrameLayout;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 /*
  * This bar will manage the transition between the QSB search bar and the delete drop

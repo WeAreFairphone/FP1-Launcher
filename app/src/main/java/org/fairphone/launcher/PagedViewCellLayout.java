@@ -25,7 +25,7 @@ import android.view.View;
 import android.view.ViewDebug;
 import android.view.ViewGroup;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 /**
  * An abstraction of the original CellLayout which supports laying out items

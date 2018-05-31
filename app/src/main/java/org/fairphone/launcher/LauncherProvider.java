@@ -50,7 +50,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.util.Xml;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import org.fairphone.launcher.LauncherSettings.Favorites;
 import org.xmlpull.v1.XmlPullParser;

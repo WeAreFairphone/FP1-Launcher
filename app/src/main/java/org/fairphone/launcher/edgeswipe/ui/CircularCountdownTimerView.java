@@ -15,7 +15,7 @@
  */
 package org.fairphone.launcher.edgeswipe.ui;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 import org.fairphone.launcher.util.KWMathUtils;
 
 import android.content.Context;

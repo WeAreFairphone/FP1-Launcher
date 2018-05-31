@@ -21,6 +21,8 @@ import java.util.ArrayList;
 
 import org.fairphone.launcher.edgeswipe.ui.EdgeSwipeInterceptorViewListener;
 
+import community.fairphone.launcher.R;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -154,7 +156,7 @@ public class DragController {
 
 		/**
 		 * A drag has begun
-		 * 
+		 *
 		 * @param source
 		 *            An object representing where the drag originated
 		 * @param info
@@ -174,7 +176,7 @@ public class DragController {
 
 	/**
 	 * Used to create a new DragLayer from XML.
-	 * 
+	 *
 	 * @param context
 	 *            The application's context.
 	 */
@@ -255,7 +257,7 @@ public class DragController {
 
 	/**
 	 * Starts a drag.
-	 * 
+	 *
 	 * @param v
 	 *            The view that is being dragged
 	 * @param bmp
@@ -296,7 +298,7 @@ public class DragController {
 
 	/**
 	 * Starts a drag.
-	 * 
+	 *
 	 * @param b
 	 *            The bitmap to display as the drag image. It will be re-scaled
 	 *            to the enlarged size.
@@ -408,7 +410,7 @@ public class DragController {
 
 	/**
 	 * Call this from a drag source view like this:
-	 * 
+	 *
 	 * <pre>
 	 *  @Override
 	 *  public boolean dispatchKeyEvent(KeyEvent event) {
@@ -838,7 +840,7 @@ public class DragController {
 
 	/**
 	 * Determines whether the user flung the current item to delete it.
-	 * 
+	 *
 	 * @return the vector at which the item was flung, or null if no fling was
 	 *         detected.
 	 */

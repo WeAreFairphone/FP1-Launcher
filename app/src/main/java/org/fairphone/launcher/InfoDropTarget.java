@@ -27,7 +27,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 public class InfoDropTarget extends ButtonDropTarget {
 

@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<favorites xmlns:launcher="http://schemas.android.com/apk/res/org.fairphone.launcher">
+<favorites xmlns:launcher="http://schemas.android.com/apk/res/community.fairphone.launcher">
     <!-- Far-left screen [0] -->
 
     <!-- Left screen [1] -->

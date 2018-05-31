@@ -15,7 +15,7 @@
  */
 package org.fairphone.settings;
 
-import org.fairphone.launcher.R;
+import community.fairphone.launcher.R;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -28,10 +28,10 @@ public class SettingsFragment extends PreferenceFragment {
         super.onCreate(savedInstanceState);
 
         PreferenceManager preferenceManager = getPreferenceManager();
-        
+
         preferenceManager.setSharedPreferencesName("HomeSettings");
         preferenceManager.setSharedPreferencesMode(Context.MODE_WORLD_WRITEABLE);
-        
+
         // Load the preferences from an XML resource
         addPreferencesFromResource(R.xml.launcher_settings);
     }

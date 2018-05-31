@@ -4,7 +4,7 @@ android {
     compileSdkVersion 19
 
     defaultConfig {
-        applicationId "org.fairphone.launcher"
+        applicationId "community.fairphone.launcher"
         minSdkVersion 14
         targetSdkVersion 19
         versionCode 1
