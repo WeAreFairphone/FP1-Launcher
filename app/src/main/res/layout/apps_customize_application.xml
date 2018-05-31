@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<org.fairphone.launcher.PagedViewIcon
+<community.fairphone.launcher.PagedViewIcon
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:launcher="http://schemas.android.com/apk/res/org.fairphone.launcher"
 

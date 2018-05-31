@@ -49,7 +49,7 @@
                 android:background="@drawable/edit_menu_list_background"
                 android:orientation="vertical" >
 
-                <org.fairphone.launcher.edgeswipe.ui.EditFavoritesGridView
+                <community.fairphone.launcher.edgeswipe.ui.EditFavoritesGridView
                     android:id="@+id/allAppsGridView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

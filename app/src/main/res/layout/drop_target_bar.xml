@@ -19,7 +19,7 @@
         style="@style/DropTargetButtonContainer"
         android:layout_weight="1">
         <!-- Delete target -->
-        <org.fairphone.launcher.DeleteDropTarget
+        <community.fairphone.launcher.DeleteDropTarget
             style="@style/DropTargetButton"
             android:id="@+id/delete_target_text"
             android:text="@string/delete_zone_label_workspace"
@@ -30,7 +30,7 @@
         style="@style/DropTargetButtonContainer"
         android:layout_weight="1">
         <!-- Info target -->
-        <org.fairphone.launcher.InfoDropTarget
+        <community.fairphone.launcher.InfoDropTarget
             style="@style/DropTargetButton"
             android:id="@+id/info_target_text"
             android:text="@string/info_target_label"

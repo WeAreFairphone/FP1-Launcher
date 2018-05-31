@@ -5,7 +5,7 @@
     android:layout_height="match_parent" 
      android:background="#00000000">
 
-    <org.fairphone.oobe.animation.MenuTutorialAnimationView
+    <community.fairphone.oobe.animation.MenuTutorialAnimationView
         android:id="@+id/swipeAnimationView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
