@@ -73,7 +73,7 @@
     <application
         android:name=".FairphoneApplication"
         android:label="@string/application_name"
-        android:taskAffinity="org.fairphone.launcher.Launcher"
+        android:taskAffinity="community.fairphone.launcher.Launcher"
         android:icon="@mipmap/icon_launcher_home"
         android:hardwareAccelerated="true"
         android:largeHeap="@bool/config_largeHeap"
@@ -87,7 +87,7 @@
             android:stateNotNeeded="true"
             android:theme="@style/Theme"
             android:windowSoftInputMode="adjustPan"
-            android:taskAffinity="org.fairphone.launcher.Launcher"
+            android:taskAffinity="community.fairphone.launcher.Launcher"
             android:screenOrientation="nosensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -143,11 +143,11 @@
 	    </receiver>
 
 	    <!-- Service
-	    <service android:name="org.fairphone.widgets.appswitcher.TimerService"
+	    <service android:name="community.fairphone.widgets.appswitcher.TimerService"
 	        	 android:permission="android.permission.BIND_REMOTEVIEWS" />
-	    <service android:name="org.fairphone.widgets.appswitcher.WidgetServiceRecentApps"
+	    <service android:name="community.fairphone.widgets.appswitcher.WidgetServiceRecentApps"
 	             android:permission="android.permission.BIND_REMOTEVIEWS" />
-	    <service android:name="org.fairphone.widgets.appswitcher.WidgetServiceMostUsedApps"
+	    <service android:name="community.fairphone.widgets.appswitcher.WidgetServiceMostUsedApps"
 	             android:permission="android.permission.BIND_REMOTEVIEWS" />
         -->
         <!-- Intent received used to prepopulate the default workspace. -->
@@ -189,7 +189,7 @@
         <!-- The settings provider contains Home's data, like the workspace favorites -->
         <provider
             android:name=".LauncherProvider"
-            android:authorities="org.fairphone.launcher.settings"
+            android:authorities="community.fairphone.launcher.settings"
             android:exported="true"
             android:writePermission="com.android.launcher.permission.WRITE_SETTINGS"
             android:readPermission="com.android.launcher.permission.READ_SETTINGS" />

@@ -148,16 +148,16 @@ public final class Launcher extends Activity implements View.OnClickListener,
 	static final boolean DEBUG_WIDGETS = false;
 	static final boolean DEBUG_STRICT_MODE = false;
 
-	public static final String APP_SWITCHER_LAUNCH_APP = "org.fairphone.launcher.LAUNCH";
-	public static final String APP_SWITCHER_RESET = "org.fairphone.launcher.RESET";
-	public static final String APP_SWITCHER_ALL_APPS = "org.fairphone.launcher.ALL_APPS";
+	public static final String APP_SWITCHER_LAUNCH_APP = "community.fairphone.launcher.LAUNCH";
+	public static final String APP_SWITCHER_RESET = "community.fairphone.launcher.RESET";
+	public static final String APP_SWITCHER_ALL_APPS = "community.fairphone.launcher.ALL_APPS";
 	public static final String PREFS_APP_SWITCHER_APPS_DATA = "FAIRPHONE_APP_SWITCHER_ALL_APPS";
 	private static SimpleDateFormat DATE_FORMATTER = new SimpleDateFormat(
 			"yyyy-MM-dd hh:mm:ss");
 
-	public static String APP_NAME = "org.fairphone.launcher.AppName";
-	public static String APP_PACKAGE = "org.fairphone.launcher.AppPackageName";
-	public static String APP_CLASS_NAME = "org.fairphone.launcher.AppClassName";
+	public static String APP_NAME = "community.fairphone.launcher.AppName";
+	public static String APP_PACKAGE = "community.fairphone.launcher.AppPackageName";
+	public static String APP_CLASS_NAME = "community.fairphone.launcher.AppClassName";
 
 	private static final int MENU_GROUP_WALLPAPER = 1;
 	private static final int MENU_WALLPAPER_SETTINGS = Menu.FIRST + 1;
@@ -4422,7 +4422,7 @@ public final class Launcher extends Activity implements View.OnClickListener,
 
 		if (mSharedPrefs.getBoolean(SHOW_VALUES_VIDEO, true)) {
 			Intent launchIntent = getPackageManager()
-					.getLaunchIntentForPackage("org.fairphone.fairphonevalues");
+					.getLaunchIntentForPackage("community.fairphone.fairphonevalues");
 			if (launchIntent != null) {
 				startActivity(launchIntent);
 				result = true;
