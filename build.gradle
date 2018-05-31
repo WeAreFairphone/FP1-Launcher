@@ -1,38 +1,22 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 buildscript {
     repositories {
-        mavenCentral()
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:3.1.2'
     }
 }
-apply plugin: 'android'
 
-repositories {
-    mavenCentral()
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
 }
 
-android {
-    compileSdkVersion 19
-    buildToolsVersion '19.1.0'
-
-    defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 19
-    }
-    buildTypes {
-        release {
-            minifyEnabled true
-            proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
-        }
-    }
-    productFlavors {
-        defaultFlavor {
-            proguardFile 'proguard-rules.txt'
-        }
-    }
-    lintOptions {
-        abortOnError false
-    }
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
