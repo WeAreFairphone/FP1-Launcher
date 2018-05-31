@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<org.fairphone.launcher.Cling
+<community.fairphone.launcher.Cling
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:launcher="http://schemas.android.com/apk/res/community.fairphone.launcher"
     android:layout_width="match_parent"
@@ -59,4 +59,4 @@
         android:layout_marginRight="10dp"
         android:layout_gravity="bottom|right"
         android:onClick="dismissWorkspaceCling" />
-</org.fairphone.launcher.Cling>
+</community.fairphone.launcher.Cling>

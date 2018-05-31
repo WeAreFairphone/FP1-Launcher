@@ -71,7 +71,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="org.fairphone.launcher.FairphoneApplication"
+        android:name=".FairphoneApplication"
         android:label="@string/application_name"
         android:taskAffinity="org.fairphone.launcher.Launcher"
         android:icon="@mipmap/icon_launcher_home"
@@ -80,7 +80,7 @@
         android:supportsRtl="true">
 
         <activity
-            android:name="org.fairphone.launcher.Launcher"
+            android:name=".Launcher"
             android:label="@string/application_name"
             android:launchMode="singleTask"
             android:clearTaskOnLaunch="true"
@@ -98,7 +98,7 @@
         </activity>
 
         <activity
-            android:name="org.fairphone.launcher.WallpaperChooser"
+            android:name=".WallpaperChooser"
             android:theme="@style/Theme.WallpaperPicker"
             android:label="@string/pick_wallpaper"
             android:icon="@mipmap/ic_launcher_wallpaper"
@@ -114,16 +114,16 @@
         </activity>
 
         <activity
-            android:name="org.fairphone.launcher.edgeswipe.edit.EditFavoritesActivity"
+            android:name=".edgeswipe.edit.EditFavoritesActivity"
             android:theme="@style/Theme"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="org.fairphone.settings.SettingsActivity"
+            android:name="community.fairphone.settings.SettingsActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="org.fairphone.oobe.OOBEActivity"
+            android:name="community.fairphone.oobe.OOBEActivity"
             android:theme="@style/OOBETheme"
             android:screenOrientation="portrait" />
 
@@ -132,7 +132,7 @@
         <!-- Widget -->
 	    <receiver android:icon="@drawable/all_apps_button_icon"
 	              android:label="@string/app_switcher_name"
-	              android:name="org.fairphone.widgets.appswitcher.WidgetProvider">
+	              android:name="community.fairphone.widgets.appswitcher.WidgetProvider">
 
 	      <intent-filter>
 	        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -152,7 +152,7 @@
         -->
         <!-- Intent received used to prepopulate the default workspace. -->
         <receiver
-            android:name="org.fairphone.launcher.PreloadReceiver"
+            android:name=".PreloadReceiver"
             android:permission="com.android.launcher.permission.PRELOAD_WORKSPACE">
             <intent-filter>
                 <action android:name="com.android.launcher.action.PRELOAD_WORKSPACE" />
@@ -161,7 +161,7 @@
 
         <!-- Intent received used to install shortcuts from other applications -->
         <receiver
-            android:name="org.fairphone.launcher.InstallShortcutReceiver"
+            android:name=".InstallShortcutReceiver"
             android:permission="com.android.launcher.permission.INSTALL_SHORTCUT">
             <intent-filter>
                 <action android:name="com.android.launcher.action.INSTALL_SHORTCUT" />
@@ -170,7 +170,7 @@
 
         <!-- Intent received used to uninstall shortcuts from other applications -->
         <receiver
-            android:name="org.fairphone.launcher.UninstallShortcutReceiver"
+            android:name=".UninstallShortcutReceiver"
             android:permission="com.android.launcher.permission.UNINSTALL_SHORTCUT">
             <intent-filter>
                 <action android:name="com.android.launcher.action.UNINSTALL_SHORTCUT" />
@@ -179,7 +179,7 @@
 
         <!-- New user initialization; set up initial wallpaper -->
         <receiver
-            android:name="org.fairphone.launcher.UserInitializeReceiver"
+            android:name=".UserInitializeReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.USER_INITIALIZE" />
@@ -188,7 +188,7 @@
 
         <!-- The settings provider contains Home's data, like the workspace favorites -->
         <provider
-            android:name="org.fairphone.launcher.LauncherProvider"
+            android:name=".LauncherProvider"
             android:authorities="org.fairphone.launcher.settings"
             android:exported="true"
             android:writePermission="com.android.launcher.permission.WRITE_SETTINGS"

@@ -49,7 +49,7 @@
 
        <appwidget
         launcher:packageName="org.fairphone.launcher"
-        launcher:className="org.fairphone.widgets.appswitcher.WidgetProvider"
+        launcher:className="community.fairphone.widgets.appswitcher.WidgetProvider"
         launcher:screen="3"
         launcher:x="0"
         launcher:y="0"

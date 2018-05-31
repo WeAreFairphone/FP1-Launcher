@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <!-- dummy layout, to be replaced in overlays -->
-<org.fairphone.launcher.Cling
+<community.fairphone.launcher.Cling
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:launcher="http://schemas.android.com/apk/res/community.fairphone.launcher"
     android:layout_width="match_parent"
@@ -29,4 +29,4 @@
         android:gravity="left"
         android:layout_gravity="bottom|left"
     />
-</org.fairphone.launcher.Cling>
+</community.fairphone.launcher.Cling>

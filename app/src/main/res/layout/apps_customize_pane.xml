@@ -15,7 +15,7 @@
 
      android:background="#FF000000"
 -->
-<org.fairphone.launcher.AppsCustomizeTabHost
+<community.fairphone.launcher.AppsCustomizeTabHost
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:launcher="http://schemas.android.com/apk/res/community.fairphone.launcher"
     android:background="@drawable/apps_widgets_bg"
@@ -35,7 +35,7 @@
             android:layout_height="@dimen/apps_customize_tab_bar_height"
             android:layout_marginTop="@dimen/apps_customize_tab_bar_margin_top"
             android:layout_gravity="center_horizontal">
-            <org.fairphone.launcher.FocusOnlyTabWidget
+            <community.fairphone.launcher.FocusOnlyTabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -54,7 +54,7 @@
             android:id="@android:id/tabcontent"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <org.fairphone.launcher.AppsCustomizePagedView
+            <community.fairphone.launcher.AppsCustomizePagedView
                 android:id="@+id/apps_customize_pane_content"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -94,4 +94,4 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone" />
-</org.fairphone.launcher.AppsCustomizeTabHost>
+</community.fairphone.launcher.AppsCustomizeTabHost>

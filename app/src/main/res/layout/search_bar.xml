@@ -22,7 +22,7 @@
     android:layout_gravity="bottom|center_horizontal"
     android:background="@drawable/search_frame">
    <!-- Global search icon -->
-   <org.fairphone.launcher.HolographicLinearLayout
+   <community.fairphone.launcher.HolographicLinearLayout
         style="@style/SearchButton"
         launcher:sourceImageViewId="@+id/search_button"
         android:id="@+id/search_button_container"
@@ -43,10 +43,10 @@
             android:layout_height="match_parent"
             android:src="@drawable/ic_home_search_normal_holo"
             android:adjustViewBounds="true" />
-    </org.fairphone.launcher.HolographicLinearLayout>
+    </community.fairphone.launcher.HolographicLinearLayout>
 
     <!-- Voice search icon -->
-    <org.fairphone.launcher.HolographicLinearLayout
+    <community.fairphone.launcher.HolographicLinearLayout
         style="@style/SearchButton"
         launcher:sourceImageViewId="@+id/voice_button"
         android:id="@+id/voice_button_container"
@@ -67,5 +67,5 @@
             android:layout_height="match_parent"
             android:src="@drawable/ic_home_voice_search_holo"
             android:adjustViewBounds="true" />
-    </org.fairphone.launcher.HolographicLinearLayout>
+    </community.fairphone.launcher.HolographicLinearLayout>
 </RelativeLayout>
