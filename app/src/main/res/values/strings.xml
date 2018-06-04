@@ -22,7 +22,7 @@
     <!-- General -->
     <skip />
     <!-- Application name -->
-    <string name="application_name">Fairphone OS</string>
+    <string name="application_name">Fairphone 1 Launcher</string>
     <!-- AppSwitcher Widget  name -->
     <string name="app_switcher_name">Your apps</string>
     <!-- AppSwitcher Widget  name -->
