@@ -26,29 +26,29 @@
     <uses-permission android:name="android.permission.GET_TASKS"/>
 
     <permission
-        android:name="com.android.launcher.permission.PRELOAD_WORKSPACE"
+        android:name=".permission.PRELOAD_WORKSPACE"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
         android:protectionLevel="signatureOrSystem" />
     <permission
-        android:name="com.android.launcher.permission.INSTALL_SHORTCUT"
+        android:name=".permission.INSTALL_SHORTCUT"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
         android:protectionLevel="dangerous"
         android:label="@string/permlab_install_shortcut"
         android:description="@string/permdesc_install_shortcut" />
     <permission
-        android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"
+        android:name=".permission.UNINSTALL_SHORTCUT"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
         android:protectionLevel="dangerous"
         android:label="@string/permlab_uninstall_shortcut"
         android:description="@string/permdesc_uninstall_shortcut"/>
     <permission
-        android:name="com.android.launcher.permission.READ_SETTINGS"
+        android:name=".permission.READ_SETTINGS"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
         android:protectionLevel="normal"
         android:label="@string/permlab_read_settings"
         android:description="@string/permdesc_read_settings"/>
     <permission
-        android:name="com.android.launcher.permission.WRITE_SETTINGS"
+        android:name=".permission.WRITE_SETTINGS"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
         android:protectionLevel="normal"
         android:label="@string/permlab_write_settings"
@@ -60,8 +60,8 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.BIND_APPWIDGET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
-    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name=".permission.READ_SETTINGS" />
+    <uses-permission android:name=".permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
@@ -153,7 +153,7 @@
         <!-- Intent received used to prepopulate the default workspace. -->
         <receiver
             android:name=".PreloadReceiver"
-            android:permission="com.android.launcher.permission.PRELOAD_WORKSPACE">
+            android:permission=".permission.PRELOAD_WORKSPACE">
             <intent-filter>
                 <action android:name="com.android.launcher.action.PRELOAD_WORKSPACE" />
             </intent-filter>
@@ -162,7 +162,7 @@
         <!-- Intent received used to install shortcuts from other applications -->
         <receiver
             android:name=".InstallShortcutReceiver"
-            android:permission="com.android.launcher.permission.INSTALL_SHORTCUT">
+            android:permission=".permission.INSTALL_SHORTCUT">
             <intent-filter>
                 <action android:name="com.android.launcher.action.INSTALL_SHORTCUT" />
             </intent-filter>
@@ -171,7 +171,7 @@
         <!-- Intent received used to uninstall shortcuts from other applications -->
         <receiver
             android:name=".UninstallShortcutReceiver"
-            android:permission="com.android.launcher.permission.UNINSTALL_SHORTCUT">
+            android:permission=".permission.UNINSTALL_SHORTCUT">
             <intent-filter>
                 <action android:name="com.android.launcher.action.UNINSTALL_SHORTCUT" />
             </intent-filter>
@@ -191,8 +191,8 @@
             android:name=".LauncherProvider"
             android:authorities="community.fairphone.launcher.settings"
             android:exported="true"
-            android:writePermission="com.android.launcher.permission.WRITE_SETTINGS"
-            android:readPermission="com.android.launcher.permission.READ_SETTINGS" />
+            android:writePermission=".permission.WRITE_SETTINGS"
+            android:readPermission=".permission.READ_SETTINGS" />
 
         <meta-data android:name="android.nfc.disable_beam_default"
                        android:value="true" />
